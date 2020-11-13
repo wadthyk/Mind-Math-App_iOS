@@ -15,3 +15,4 @@ struct Mind_Math_AppApp: App {
         }
     }
 }
+

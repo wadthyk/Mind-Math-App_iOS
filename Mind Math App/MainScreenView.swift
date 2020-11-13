@@ -9,7 +9,10 @@ import SwiftUI
 
 struct MainScreenView: View {
     var body: some View {
-        Text("This is the MainScreen")
+        VStack {
+            Text("This is the MainScreen")
+            Text("Welcome").font(.title).bold()
+        }
     }
 }
 

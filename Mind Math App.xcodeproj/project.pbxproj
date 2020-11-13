@@ -15,6 +15,7 @@
 		F81D6FF5255E712000541ABB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D6FF4255E712000541ABB /* SettingsView.swift */; };
 		F81D6FF8255E714900541ABB /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D6FF7255E714900541ABB /* GameView.swift */; };
 		F81D6FFB255E716100541ABB /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D6FFA255E716100541ABB /* GameLogic.swift */; };
+		F837C7AA255E7CC2003A1573 /* SettingsLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837C7A9255E7CC2003A1573 /* SettingsLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F81D6FF4255E712000541ABB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F81D6FF7255E714900541ABB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F81D6FFA255E716100541ABB /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		F837C7A9255E7CC2003A1573 /* SettingsLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F81D6FF4255E712000541ABB /* SettingsView.swift */,
 				F81D6FF7255E714900541ABB /* GameView.swift */,
 				F81D6FFA255E716100541ABB /* GameLogic.swift */,
+				F837C7A9255E7CC2003A1573 /* SettingsLogic.swift */,
 				F81D6FE5255E6FDA00541ABB /* Assets.xcassets */,
 				F81D6FEA255E6FDA00541ABB /* Info.plist */,
 				F81D6FE7255E6FDA00541ABB /* Preview Content */,
@@ -155,6 +158,7 @@
 				F81D6FF5255E712000541ABB /* SettingsView.swift in Sources */,
 				F81D6FF2255E70F000541ABB /* MainScreenView.swift in Sources */,
 				F81D6FE2255E6FD700541ABB /* Mind_Math_AppApp.swift in Sources */,
+				F837C7AA255E7CC2003A1573 /* SettingsLogic.swift in Sources */,
 				F81D6FF8255E714900541ABB /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

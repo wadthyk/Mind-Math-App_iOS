@@ -8,6 +8,7 @@
 import Foundation
 
 
+
 func makeQuestionAddition() {
     let randomNumber1 = Int.random(in: 1...99)
     let randomNumber2 = Int.random(in: 1...99)
@@ -27,7 +28,7 @@ func makeQuestionSubtraction() {
 func makeQuestionMultiplication() {
     let randomNumber1 = Int.random(in: 1...99)
     let randomNumber2 = Int.random(in: 1...10)
-    print("\(randomNumber1) x \(randomNumber2)")
+    print("\(randomNumber1) multiplied by \(randomNumber2)")
     let solution = randomNumber1 * randomNumber2
     print("The Solution is \(solution)." )
 }
@@ -41,7 +42,7 @@ func makeQuestionDivision() {
     } else {
         print("Number doesn't work for this operation")
     }
-    print("\(randomNumber1) / \(randomNumber2)")
+    print("\(randomNumber1) divided by \(randomNumber2)")
     let solution = randomNumber1 / randomNumber2
     print("The Solution is \(solution)." )
     print("\(questionNumber) are left.")

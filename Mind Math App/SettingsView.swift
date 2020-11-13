@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text("This is the MainScreen")
+        VStack {
+            Text("This is the SettingsScreen")
+            Text("Settings").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold()
+        }
     }
 }
 
