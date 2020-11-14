@@ -27,6 +27,11 @@ struct MainScreenView: View {
             Text("Settings").font(.title).bold()
                 .navigationBarTitle("Navigation")
                     }
+        HStack {
+            Image(systemName: "person.circle.fill")
+            Text("Extras").font(.title).bold()
+                .navigationBarTitle("Navigation")
+                                }
                 }
             }
         }
