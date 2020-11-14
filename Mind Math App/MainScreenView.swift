@@ -11,16 +11,21 @@ struct MainScreenView: View {
     var body: some View {
         NavigationView{
             NavigationLink(destination: Text("In Line Menu (Second View)")) {
-                VStack(spacing: 30){
-        VStack {
+                VStack(alignment: .leading) {
+        HStack {
+            Image(systemName: "house.fill")
             Text("Welcome").font(.title).bold()
                 .navigationBarTitle("Navigation")
-            Text("This is the MainScreen")
                 }
-        VStack {
-            Text("Options").font(.title).bold()
+        HStack {
+            Image(systemName: "play.circle.fill")
+            Text("Play").font(.title).bold()
                 .navigationBarTitle("Navigation")
-            Text("Click Button for Options View")
+                    }
+        HStack {
+            Image(systemName: "gearshape.fill")
+            Text("Settings").font(.title).bold()
+                .navigationBarTitle("Navigation")
                     }
                 }
             }
