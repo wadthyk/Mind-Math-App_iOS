@@ -16,22 +16,22 @@ struct MainScreenView: View {
             Image(systemName: "house.fill")
             Text("Welcome").font(.title).bold()
                 .navigationBarTitle("Navigation")
-                }
-        HStack {
+        }.padding()
+                    HStack {
             Image(systemName: "play.circle.fill")
             Text("Play").font(.title).bold()
                 .navigationBarTitle("Navigation")
-                    }
-        HStack {
+        }.padding()
+                    HStack {
             Image(systemName: "gearshape.fill")
             Text("Settings").font(.title).bold()
                 .navigationBarTitle("Navigation")
-                    }
-        HStack {
+        }.padding()
+                    HStack {
             Image(systemName: "person.circle.fill")
             Text("Extras").font(.title).bold()
                 .navigationBarTitle("Navigation")
-                                }
+        }.padding()
                 }
             }
         }
