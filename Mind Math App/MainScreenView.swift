@@ -9,34 +9,57 @@ import SwiftUI
 
 struct MainScreenView: View {
     var body: some View {
-        NavigationView{
-            NavigationLink(destination: Text("In Line Menu (Second View)")) {
-                VStack(alignment: .leading) {
-        HStack {
+
+        VStack(alignment: .leading) {
+                    
+            HStack {
             Image(systemName: "house.fill")
             Text("Welcome").font(.title).bold()
                 .navigationBarTitle("Navigation")
-        }.padding()
-                    HStack {
+            }.padding()
+            .foregroundColor(.red)
+            .shadow(radius: 10)
+            
+            HStack {
             Image(systemName: "play.circle.fill")
             Text("Play").font(.title).bold()
                 .navigationBarTitle("Navigation")
-        }.padding()
-                    HStack {
+            }.padding()
+            .foregroundColor(.blue)
+            .shadow(radius: 10)
+            
+            HStack {
             Image(systemName: "gearshape.fill")
             Text("Settings").font(.title).bold()
                 .navigationBarTitle("Navigation")
-        }.padding()
-                    HStack {
+            }.padding()
+            .foregroundColor(.green)
+            .shadow(radius: 10)
+            
+            HStack {
             Image(systemName: "person.circle.fill")
             Text("Extras").font(.title).bold()
                 .navigationBarTitle("Navigation")
-        }.padding()
+            }.padding()
+            .foregroundColor(.purple)
+            .shadow(radius: 10)
+            
                 }
             }
+
+
+struct WelcomeDetailPage: View {
+    var body: some View {
+        Image("test_1")
+            .clipShape(Circle())
+            .overlay(
+                Circle().stroke(Color.white, lineWidth: 4))
+            .shadow(radius: 10)
         }
     }
 }
+
+
 
 struct MainScreenView_Previews: PreviewProvider {
     static var previews: some View {
