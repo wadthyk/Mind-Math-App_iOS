@@ -14,13 +14,16 @@ struct MainScreenView: View {
         
         VStack(alignment: .leading) {
                     
+            NavigationLink(destination: WelcomeDetailPage()){
+                
             HStack {
             Image(systemName: "house.fill")
             Text("Welcome").font(.title).bold()
             }.padding()
             .foregroundColor(.red)
             .shadow(radius: 10)
-            
+            }
+                
             NavigationLink(destination: GameView()){
             
             HStack {
@@ -54,11 +57,14 @@ struct MainScreenView: View {
 
 struct WelcomeDetailPage: View {
     var body: some View {
+        
+        VStack {
         Image("test_1")
             .clipShape(Circle())
             .overlay(
                 Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 10)
+            }
         }
     }
 }
