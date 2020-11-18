@@ -10,43 +10,47 @@ import SwiftUI
 struct MainScreenView: View {
     var body: some View {
 
+    NavigationView{
+        
         VStack(alignment: .leading) {
                     
             HStack {
             Image(systemName: "house.fill")
             Text("Welcome").font(.title).bold()
-                .navigationBarTitle("Navigation")
             }.padding()
             .foregroundColor(.red)
             .shadow(radius: 10)
             
+            NavigationLink(destination: GameView()){
+            
             HStack {
             Image(systemName: "play.circle.fill")
             Text("Play").font(.title).bold()
-                .navigationBarTitle("Navigation")
             }.padding()
             .foregroundColor(.blue)
             .shadow(radius: 10)
+            }
             
-            HStack {
-            Image(systemName: "gearshape.fill")
-            Text("Settings").font(.title).bold()
-                .navigationBarTitle("Navigation")
-            }.padding()
-            .foregroundColor(.green)
-            .shadow(radius: 10)
-            
+            NavigationLink(destination: SettingsView()){
+                
+                HStack {
+                Image(systemName: "gearshape.fill")
+                Text("Settings").font(.title).bold()
+                }.padding()
+                .foregroundColor(.green)
+                .shadow(radius: 10)
+            }
+
             HStack {
             Image(systemName: "person.circle.fill")
             Text("Extras").font(.title).bold()
-                .navigationBarTitle("Navigation")
             }.padding()
             .foregroundColor(.purple)
             .shadow(radius: 10)
             
-                }
             }
-
+        }
+    }
 
 struct WelcomeDetailPage: View {
     var body: some View {

@@ -9,9 +9,11 @@ import SwiftUI
 
 struct GameView: View {
     var body: some View {
+        NavigationView{
         VStack {
             Text("This is the GameViewScreen")
             Text("GameScreen").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold()
+            }
         }
     }
 }
