@@ -44,6 +44,8 @@ struct MainScreenView: View {
                 .shadow(radius: 10)
             }
 
+            NavigationLink(destination: ExtrasDetailedPage()){
+                
             HStack {
             Image(systemName: "person.circle.fill")
             Text("Extras").font(.title).bold()
@@ -51,24 +53,11 @@ struct MainScreenView: View {
             .foregroundColor(.purple)
             .shadow(radius: 10)
             
-            }
-        }
-    }
-
-struct WelcomeDetailPage: View {
-    var body: some View {
-        
-        VStack {
-        Image("test_1")
-            .clipShape(Circle())
-            .overlay(
-                Circle().stroke(Color.white, lineWidth: 4))
-            .shadow(radius: 10)
+                }
             }
         }
     }
 }
-
 
 
 struct MainScreenView_Previews: PreviewProvider {
